@@ -225,17 +225,17 @@ figure {
 </style>
 
 
-<div class="topnav" id="myTopnav">
-  <a href="https://www.nvidia.com/"><img width="100%" src="assets/nvidia.svg"></a>
-  <a href="https://nv-tlabs.github.io/" ><strong>Toronto AI Lab</strong></a>
-</div>
+<!-- <div class="topnav" id="myTopnav"> -->
+  <!-- <a href="https://www.nvidia.com/"><img width="100%" src="assets/nvidia.svg"></a> -->
+  <!-- <a href="https://nv-tlabs.github.io/" ><strong>Toronto AI Lab</strong></a> -->
+<!-- </div> -->
 
 <!-- End : Google Analytics Code -->
 <script type="text/javascript" src="../js/hidebib.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
 <head>
-    <title>GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images</title>
-    <meta property="og:description" content="GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images"/>
+    <title>DPGen: A 3D Generative Model for Dynamic Portrait Generation</title>
+    <meta property="og:description" content="DPGen: A 3D Generative Model for Dynamic Portrait Generation"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -244,12 +244,12 @@ figure {
  <body>
 <div class="container">
     <div class="paper-title">
-      <h1>GET3D: A Generative Model of High Quality 3D Textured Shapes Learned from Images</h1>
+      <h1>DPGen: A 3D Generative Model for Dynamic Portrait Generation</h1>
     </div>
 
     
     <div id="authors">
-        <div class="author-row">
+        <!-- <div class="author-row">
             
             
             <div class="col-4 text-center"><a href="http://www.cs.toronto.edu/~jungao/">Jun Gao</a><sup>1,2,3</sup></div>
@@ -261,18 +261,18 @@ figure {
             <div class="col-5 text-center"><a href="https://orlitany.github.io/">Or Litany</a><sup>1</sup></div>
             <div class="col-5 text-center"><a href="https://zgojcic.github.io/">Zan Gojcic</a><sup>1</sup></div>
             <div class="col-5 text-center"><a href="https://www.cs.toronto.edu/~fidler/">Sanja Fidler</a><sup>1,2,3</sup></div>
-        </div>
+        </div> -->
 
-        <div class="affil-row">
+        <!-- <div class="affil-row">
             <div class="col-3 text-center"><sup>1</sup>NVIDIA</a></div>
             <div class="col-3 text-center"><sup>2</sup>University of Toronto</div>
             <div class="col-3 text-center"><sup>3</sup>Vector Institute</div>
-        </div>
+        </div> -->
         <div class="affil-row">
-            <div class="venue text-center"><b>NeurIPS 2022</b></div>
+            <div class="venue text-center"><b>ICLR 2023 Submission</b></div>
         </div>
 
-        <div style="clear: both">
+        <!-- <div style="clear: both">
             <div class="paper-btn-parent">
             <a class="supp-btn" href="assets/paper.pdf">
                 <span class="material-icons"> description </span> 
@@ -287,13 +287,13 @@ figure {
                 <span class="material-icons"> description </span> 
                   Code
             </a>
-        </div></div>
+        </div></div> -->
     </div>
 
     <section id="teaser">
             <figure style="width: 100%;">
-                <a href="assets/get3d_model.png">
-                    <img width="100%" src="assets/get3d_model.png">
+                <a href="assets/teaser_img.jpg">
+                    <img width="100%" src="assets/teaser_img.jpg">
                 </a>
                 <p class="caption" style="margin-bottom: 1px;  text-align: justify">
                    We generate a 3D SDF and a texture field via two latent codes. We utilize DMTet to extract a 3D surface mesh from the SDF, and query the texture field at surface points to get colors. We train with adversarial losses defined on 2D images. In particular, we use a rasterization-based differentiable renderer to obtain RGB images and silhouettes. We utilize two 2D discriminators, each on RGB image, and silhouette, respectively, to classify whether the inputs are real or fake. The whole model is end-to-end trainable.
@@ -302,7 +302,7 @@ figure {
             <br>
             <figure style="width: 100%;">
              <video class="centered" width="90%" controls muted loop autoplay>
-                <source src="assets/teaser-rotate.mp4" type="video/mp4">
+                <source src="assets/teaser_demo.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
             <p class="caption" style="margin-bottom : 1px; text-align: justify">
@@ -319,7 +319,7 @@ figure {
             </p>
     </section>
 
-    <section id="paper">
+    <!-- <section id="paper">
         <h2>Paper</h2>
         <hr>
         <div class="flex-row">
@@ -334,7 +334,7 @@ figure {
                 <div><span class="material-icons"> insert_comment </span><a href="assets/bib.txt"> BibTeX</a></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <section id="results">
@@ -439,7 +439,7 @@ In each row, we locally perturb the latent code by adding a small noise. In this
     </section>
     
 
-    <section id="bibtex">
+    <!-- <section id="bibtex">
         <h2>Citation</h2>
         <hr>
 
@@ -450,8 +450,8 @@ In each row, we locally perturb the latent code by adding a small noise. In this
         and Daiqing Li and Or Litany and Zan Gojcic and Sanja Fidler},
     booktitle={Advances In Neural Information Processing Systems},
     year={2022}
-}
-</code></pre>
+} -->
+<!-- </code></pre>
     </section>
 
         <section id="bibtex">
@@ -486,9 +486,9 @@ In each row, we locally perturb the latent code by adding a small noise. In this
     pages={8280--8290},
     year={2022}
 }
-        </code></pre>
+        </code></pre> -->
 
-    </section>
+    <!-- </section> -->
 
 <br />
     
