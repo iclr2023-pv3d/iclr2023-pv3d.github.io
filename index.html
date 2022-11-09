@@ -276,7 +276,7 @@ figure {
     <h2>Abstract</h2>
     <hr>
     <p>
-        Recent advances in generative adversarial networks (GANs) have demonstrated the capabilities of generating stunning photo-realistic portrait images. While some prior works have applied such image GANs to unconditional 2D portrait video generation and static 3D portrait synthesis, there are few works successfully extending GANs for generating 3D-aware portrait videos. In this work, we propose PV3D, the first generative framework that can synthesize multi-view consistent portrait videos.  Specifically, our method extends the recent static 3D-aware image GAN to the video domain by generalizing the 3D implicit neural representation to model the spatio-temporal space. To introduce motion dynamics to the generation process, we develop a motion generator by stacking multiple motion layers to generate motion features via modulated convolution. To alleviate motion ambiguities caused by camera/human motions, we propose a simple yet effective camera condition strategy for PV3D, enabling both temporal and multi-view consistent video generation. Moreover, PV3D introduces two discriminators for regularizing the spatial and temporal domains to ensure the plausibility of the generated portrait videos. These elaborated designs enable \ours{} to generate 3D-aware motion-plausible portrait videos with high-quality appearance and geometry, significantly outperforming prior works. As a result, PV3D is able to support many downstream applications such as animating static portraits and view-consistent video motion editing. Code and models will be released.
+        Recent advances in generative adversarial networks (GANs) have demonstrated the capabilities of generating stunning photo-realistic portrait images. While some prior works have applied such image GANs to unconditional 2D portrait video generation and static 3D portrait synthesis, there are few works successfully extending GANs for generating 3D-aware portrait videos. In this work, we propose PV3D, the first generative framework that can synthesize multi-view consistent portrait videos.  Specifically, our method extends the recent static 3D-aware image GAN to the video domain by generalizing the 3D implicit neural representation to model the spatio-temporal space. To introduce motion dynamics to the generation process, we develop a motion generator by stacking multiple motion layers to generate motion features via modulated convolution. To alleviate motion ambiguities caused by camera/human motions, we propose a simple yet effective camera condition strategy for PV3D, enabling both temporal and multi-view consistent video generation. Moreover, PV3D introduces two discriminators for regularizing the spatial and temporal domains to ensure the plausibility of the generated portrait videos. These elaborated designs enable PV3D to generate 3D-aware motion-plausible portrait videos with high-quality appearance and geometry, significantly outperforming prior works. As a result, PV3D is able to support many downstream applications such as animating static portraits and view-consistent video motion editing. Code and models will be released.
     </p>
     </section>
 
@@ -308,11 +308,11 @@ figure {
                 <td><video width="100%" muted loop autoplay><source src="qual_comp/ours/celebvhq.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>        
             </tr>
             <tr>
-            <td><video width="100%" muted loop autoplay><source src="qual_comp/mocoganhd_stylenerf/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
-            <td><video width="100%" muted loop autoplay><source src="qual_comp/mocoganhd_eg3d/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td> 
-            <td><video width="100%" muted loop autoplay><source src="qual_comp/3dvidgen/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
-            <td><video width="100%" muted loop autoplay><source src="qual_comp/3dvidgen_eg3d/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
-            <td><video width="100%" muted loop autoplay><source src="qual_comp/ours/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>     
+                <td><video width="100%" muted loop autoplay><source src="qual_comp/mocoganhd_stylenerf/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="qual_comp/mocoganhd_eg3d/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td> 
+                <td><video width="100%" muted loop autoplay><source src="qual_comp/3dvidgen/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="qual_comp/3dvidgen_eg3d/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="qual_comp/ours/th1khd.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>     
             </tr>
         </table>
         <br>
@@ -376,6 +376,55 @@ figure {
           <p class="caption" style="margin-bottom: 1px; text-align: center">
             PV3D provides a quick solution for 3D reconstruction on monocular videos. The motion of input videos can be manipulated by changing motion codes. The results can maintain multi-view consistency.
           </p>
+        <br>
+        <br>
+        <hr>
+        <h3>Motion Retargeting</h3>
+        <table width="100%" align="center">
+            <tr>
+                <td  width="12.5%" style="text-align:center; font-size:14px"><b>Source</b></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video1/source.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay>Your browser does not support the video tag.</video></td>    
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video2/source.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay>Your browser does not support the video tag.</video></td>   
+            </tr>
+            <tr>
+                <td  width="25%" style="text-align:center; font-size:14px"><b>Target 1 (Image)</b></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/image1/male_retarget/cano_0000.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/image1/male_retarget/output.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/image1/female_retarget/cano_0000.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/image1/female_retarget/output.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>       
+            </tr>
+            <tr>
+                <td  width="25%" style="text-align:center; font-size:14px"><b>Target 2 (Video)</b></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video2/male_retarget/cano_0000.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video2/male_retarget/output.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video1/female_retarget/cano_0000.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="application/retarget/video1/female_retarget/output.mp4" type="video/mp4">Your browser does not support the video tag.</video></td> 
+            </tr>
+          </table> 
+          <p class="caption" style="margin-bottom: 1px; text-align: center">
+            Based on PV3D, the motion code can be used for retargeting portrait videos of different identities.
+          </p>
+        <br>
+        <br>
+
+        <h2>Long-term video synthesis</h2>
+        <hr>
+        </table>
+        <table  width="100%" align="center"> 
+            <tr>
+                <td><video width="100%" muted loop autoplay><source src="results/ours48/rgb_0000.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="results/ours48/rgb_0001.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="results/ours48/rgb_0002.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="results/ours48/rgb_0003.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>
+                <td><video width="100%" muted loop autoplay><source src="results/ours48/rgb_0004.mp4" type="video/mp4">Your browser does not support the video tag.</video></td>              
+            </tr>
+        </table>
+        <p class="caption" style="margin-bottom: 1px; text-align: center">
+            Generated videos of PV3D, trained on 48 frame clips.
+          </p>
+        <br>
         <br>
 
     </section>
